@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:540px;height:960px;overflow:hidden;font-family:'Inter';
+ background:radial-gradient(130% 90% at 50% -10%,#3f7a68 0%,#244a40 45%,#152e27 100%)}
+.glow{position:fixed;width:560px;height:560px;border-radius:50%;background:radial-gradient(closest-side,rgba(231,205,155,.16),transparent);top:-180px;left:-120px}
+.brandtop{position:fixed;top:30px;left:0;right:0;text-align:center;color:#d8e8e1;font-family:'Fraunces';font-size:22px;letter-spacing:.01em;z-index:4}
+.brandtop b{color:#fff}.brandtop .e{display:block;font-family:'Inter';font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#8bbcab;margin-top:6px}
+.phone{position:absolute;top:96px;left:50%;transform:translateX(-50%);width:312px;height:676px;
+ background:#0c0c0c;border-radius:50px;padding:11px;box-shadow:0 50px 110px -30px rgba(0,0,0,.7),0 0 0 2px rgba(255,255,255,.04)}
+.screen{position:relative;width:100%;height:100%;border-radius:40px;overflow:hidden;background:#fbf8f2}
+.notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:92px;height:22px;background:#0c0c0c;border-radius:14px;z-index:5}
+iframe{width:100%;height:100%;border:0;display:block}
+.cap{position:fixed;bottom:46px;left:0;right:0;text-align:center;padding:0 30px;
+ opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease}
+.cap.show{opacity:1;transform:none}
+.cap .t{font-family:'Fraunces';font-size:31px;line-height:1.12;color:#fff;text-shadow:0 3px 24px rgba(0,0,0,.5)}
+.cap .t span{color:#e7cd9b}
+</style></head>
+<body>
+<div class="glow"></div>
+<div class="brandtop">Orient <b>Natural Therapy</b><span class="e">Helensvale</span></div>
+<div class="phone"><div class="screen"><div class="notch"></div>
+<iframe id="site" src="index.html"></iframe>
+</div></div>
+<div class="cap" id="cap"><div class="t" id="capt"></div></div>
+<script>
+window.CAP=(html)=>{const c=document.getElementById('cap'),t=document.getElementById('capt');
+ if(!html){c.classList.remove('show');return;} if(t.dataset.h!==html){t.innerHTML=html;t.dataset.h=html;} c.classList.add('show');};
+</script>
+</body></html>

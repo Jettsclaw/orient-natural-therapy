@@ -9,3 +9,12 @@ vid/intro_clip.mp4
 vid/end_clip.mp4
 vid/intro_test.mp4
 vid/end_p2.jpg
+vid/frames2/
+vid/*_raw.mp4
+vid/staged_core.mp4
+vid/intro_cine.mp4
+vid/end16_clip.mp4
+vid/*.png
+vid/*chk*.jpg
+vid/v2intro.jpg
+vid/v2end.jpg
