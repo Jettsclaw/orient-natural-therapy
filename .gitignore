@@ -1,1 +1,11 @@
 .DS_Store
+vid/frames/
+vid/*.webm
+vid/*_prev.jpg
+vid/*frame*.jpg
+vid/chk*.png
+vid/core.mp4
+vid/intro_clip.mp4
+vid/end_clip.mp4
+vid/intro_test.mp4
+vid/end_p2.jpg
